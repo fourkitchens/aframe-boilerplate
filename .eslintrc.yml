@@ -1,0 +1,24 @@
+extends:
+  - "airbnb"
+plugins:
+  - "react"
+env:
+  es6: true
+  browser: true
+parserOptions:
+  ecmaVersion: 2015
+  ecmaFeatures:
+    jsx: true
+    experimentalObjectRestSpread: true
+rules:
+  # This is disabled because img tags are only used as asset loaders in A-Frame.
+  jsx-a11y/img-has-alt: 0
+  # This is disabled because Webpack (as far as I know) requires a file
+  # extension to exist in order for it to determine imported file types.
+  import/extensions: 0
+  # This is disabled because it would be silly to require file paths to
+  # variables, and then use those variables in <a-assets><img> tags.
+  global-require: 0
+  # React eslint currently doesn't understand deconstruction. So, applying props
+  # like this fails: {...this.props}.
+  react/no-unused-prop-types: 0

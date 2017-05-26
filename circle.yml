@@ -1,0 +1,25 @@
+machine:
+  node:
+    version: v7.7.2
+test:
+  override:
+    - "true"
+deployment:
+  publish:
+    branch: master
+    commands:
+      - npm run lint
+      - git config --global user.email "patrickcoffey48@gmail.com"
+      - git config --global user.name "Deployment Bot"
+      - git fetch
+      - git checkout master
+      - git pull origin master
+      - git checkout gh-pages
+      - git pull origin gh-pages
+      - git merge master -m "Merge in for deployment."
+      - npm run build:prod
+      - git add -A
+      - git commit -m "Deployment from PR merge."
+      - git push origin gh-pages
+      - npm run semantic-release || true
+
