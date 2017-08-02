@@ -1,2 +1,1 @@
-dist
-drupalcon-vr.*.js
+src/registerServiceWorker.js
