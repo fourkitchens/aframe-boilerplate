@@ -1,6 +1,6 @@
 {
-  "short_name": "WebVR Studio",
-  "name": "Build WebVR experiences with WebVR Studio.",
+  "short_name": "AFrame Boilerplate",
+  "name": "Very simple take on how A-Frame applications should be structured.",
   "icons": [
     {
       "src": "favicon.ico",
