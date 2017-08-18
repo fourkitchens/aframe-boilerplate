@@ -34,6 +34,7 @@
   },
   "homepage": "https://fourkitchens.github.io/aframe-boilerplate/",
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "eslint": "^4.2.0",
     "eslint-config-airbnb": "^15.0.2",
     "eslint-config-prettier": "^2.3.0",
@@ -45,10 +46,10 @@
     "last-release-git": "^0.0.3",
     "lint-staged": "^4.0.2",
     "prettier": "^1.5.3",
-    "react-scripts": "^1.0.10"
+    "react-scripts": "^1.0.11"
   },
   "dependencies": {
-    "aframe": "^0.6.0",
+    "aframe": "^0.6.1",
     "aframe-react": "^4.3.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"

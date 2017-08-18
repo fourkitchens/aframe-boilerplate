@@ -10,11 +10,8 @@ env:
 globals:
   AFRAME: true
   it: true
-parserOptions:
-  ecmaVersion: 2015
-  ecmaFeatures:
-    jsx: true
-    experimentalObjectRestSpread: true
+parser: "babel-eslint"
 rules:
+  string: 0
   react/jsx-filename-extension: 0
   react/forbid-prop-types: 0
