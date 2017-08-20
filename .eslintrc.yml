@@ -4,6 +4,7 @@ extends:
   - "prettier/react"
 plugins:
   - "react"
+  - "prettier"
 env:
   es6: true
   browser: true
@@ -12,6 +13,6 @@ globals:
   it: true
 parser: "babel-eslint"
 rules:
-  string: 0
+  strict: 0
   react/jsx-filename-extension: 0
   react/forbid-prop-types: 0
